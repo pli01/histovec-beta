@@ -27,7 +27,7 @@ function formatAsJson(tokens, req, res) {
   return JSON.stringify({
     'remote-address': tokens['remote-addr'](req, res),
     'remote-user': tokens['remote-user'](req, res),
-    'time': tokens['date'](req, res, 'iso'),
+    'timestamp': tokens['date'](req, res, 'iso'),
     'response-time': tokens['response-time'](req, res, 'iso'),
     'method': tokens['method'](req, res),
     'url': tokens['url'](req, res),
