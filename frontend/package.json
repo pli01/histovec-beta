@@ -78,7 +78,7 @@
     "open": "^6.3.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "ora": "^3.4.0",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "sass-loader": "^7.1.0",
     "semver": "^6.0.0",
     "style-loader": "^0.23.1",
