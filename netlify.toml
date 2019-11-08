@@ -1,0 +1,9 @@
+[build]
+  base = "frontend"
+  command = "( APP_VERSION=$(git describe --tags) ;  npm --no-git-tag-version version ${APP_VERSION} ; npm install && npm run build && npm install --production ) ; mv dist dst; mkdir dist/; mv dst dist/histovec ; echo -e '/assets/*   /histovec/assets   200\n/histovec/api/*   https://histovec.interieur.gouv.fr/histovec/api/:splat   200\n/*   /histovec   200' > dist/_redirects"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "12"
+  VUE_APP_TITLE = "histovec"
+
