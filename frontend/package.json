@@ -81,7 +81,7 @@
     "rimraf": "^2.6.3",
     "sass-loader": "^7.1.0",
     "semver": "^6.0.0",
-    "style-loader": "^0.23.1",
+    "style-loader": "^1.0.1",
     "url-loader": "^1.1.2",
     "vue-chartjs": "^3.4.2",
     "vue-loader": "^15.7.0",
